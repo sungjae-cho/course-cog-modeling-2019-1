@@ -5,10 +5,20 @@ library(deSolve)
 library(scatterplot3d)
 
 ## Chaos in the atmosphere
+#
 # [System equations]
 # dX/dt <-  a * X(t) + Y(t) * Z(t)
 # dY/dt <-  b * (Y(t) - Z(t))
 # dZ/dt <- -X(t) * Y(t) + c * Y(t) - Z(t)
+#
+# [Model parameters]
+# a = -8/3, b = -10, c = 28
+#
+# [Initial values/state]
+# X(0) = Y(0) = Z(0) = 1
+#
+# [Time range]
+# 0 <= Time <= 100
 
 Lorenz <- function(t, state, parameters) {
   with(as.list(c(state, parameters)), {
