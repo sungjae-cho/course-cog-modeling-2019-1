@@ -1,0 +1,9 @@
+Random-walk / k = 1 
+Mean:  -4.336634 
+Variance:  25.34554 
+Random-walk / k = 2 
+Mean:  16.33663 
+Variance:  88.58554 
+Random-walk / k = 3 
+Mean:  3.425743 
+Variance:  16.84693 
